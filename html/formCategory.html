@@ -1,0 +1,32 @@
+<div class="container">
+    
+    <div class="panel-heading">
+        <h2 class="display-5">Fiche Category</h2>
+    </div>
+    
+    <div class="panel-body">
+        <form action="index.php?controller=Category&action=list" class="form-vertical" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <label for="parm0">Identifiant</label>
+                    <input class="form-control" id="parm0" name="parm0" type="text" readonly value="{parm0}" />
+                </div>
+                <div class="form-group">
+                    <label for="parm1">Nom</label>
+                    <input class="form-control" id="parm1" name="parm1" type="text" {readonly} value="{parm1}" />
+                </div>
+                <div class="form-group">
+                    <label for="parm2">Déscription</label>
+                    <input class="form-control" id="parm2" name="parm2" type="text" {readonly} value="{parm2}" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit" id="action" name="action" value="{action}">
+                        {lib_action}</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</div>
